@@ -8,12 +8,17 @@ server:
   memory: 1500
 node:
   count: 1
-  cpus: 1
-  memory: 1500
+  cpus: 4
+  memory: 6000
 ip:
   master: 172.22.101.100
   server: 172.22.101.101
   node:   172.22.101.111
+  ldap:   172.22.101.109
+ldap:
+  count: 1
+  cpus: 1
+  memory: 1000
 linked_clones: true
 net:
   private_nic_type: 82545EM
